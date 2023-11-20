@@ -11,7 +11,7 @@ class Terminal_user_interface():
         space = " "
         invoice_num_len = len(str(invoice_num))
         space_num = 56 - len(name) - invoice_num_len
-        return f"-"*67 + f"\n{name}{space*space_num}Invoice N. {invoice_num}"
+        return "-" * 67 + f"\n{name}{space * space_num}Invoice N. {invoice_num}"
     
     def pretty_print_line(self, job, quantity, rate, amount):
         space = " "
